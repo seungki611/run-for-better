@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans KR", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", "Space Grotesk", sans-serif;
+  
+  --animate-float-up: float-up 0.8s ease-out forwards;
+  --animate-sparkle: sparkle 0.5s ease-out forwards;
+  --animate-cloud-slow: cloud-slow 30s linear infinite;
+  --animate-cloud-medium: cloud-slow 20s linear infinite;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translate(-50%, 0) scale(0.8);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -60px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes cloud-slow {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Custom scrollbar to keep layout premium */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D2D2D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4B5563;
+}
+
+/* Base custom styles to support cute retro grid and aesthetic borders */
+.pixel-border {
+  border: 4px solid #2D2D2D;
+}
+
+/* Bold Typography / Brutalist shadow highlights */
+.warm-shadow {
+  box-shadow: 4px 4px 0px 0px #2D2D2D;
+}
+
+.warm-shadow-md {
+  box-shadow: 6px 6px 0px 0px #2D2D2D;
+}
+
+.warm-shadow-lg {
+  box-shadow: 8px 8px 0px 0px #2D2D2D;
+}
+
+.warm-shadow-primary {
+  box-shadow: 6px 6px 0px 0px #2D2D2D;
+}
+
+.warm-shadow-danger {
+  box-shadow: 6px 6px 0px 0px #2D2D2D;
+}
+
+/* Brutalist Button utility style */
+.brutal-btn {
+  border: 3px solid #2D2D2D;
+  box-shadow: 4px 4px 0px #2D2D2D;
+  transition: all 0.1s ease;
+}
+
+.brutal-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #2D2D2D;
+}
+
+.brutal-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px #2D2D2D;
+}
+
+/* Ground grid styling */
+.ground-grid {
+  background-image: linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+}

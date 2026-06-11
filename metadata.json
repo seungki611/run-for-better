@@ -1,0 +1,6 @@
+{
+  "name": "Word for You",
+  "description": "영어 지문 'Bad is stronger than good'의 메시지를 체험하는 2D 러닝 액션 교육용 게임",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: './', // Ensures assets are loaded relative to the deployment folder, fixing GitHub Pages blank screen issues.
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
